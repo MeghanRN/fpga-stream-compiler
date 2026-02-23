@@ -1,0 +1,8 @@
+
+board:
+  name: artix7_demo
+  part: xc7a35tcpg236-1
+
+clock:
+  pin: E3
+  iostandard: LVCMOS33

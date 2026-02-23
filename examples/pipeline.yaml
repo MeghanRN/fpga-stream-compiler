@@ -1,0 +1,14 @@
+
+clock:
+  name: clk
+  freq_mhz: 50.0
+
+pipeline:
+  - op: DigitalInput
+    params: { width: 16 }
+  - op: Gain
+    params: { factor_q: 256 }
+  - op: Threshold
+    params: { value: 200 }
+  - op: DigitalOutput
+    params: { width: 1 }
